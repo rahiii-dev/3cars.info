@@ -1,0 +1,107 @@
+:root{
+    --primarycard-1: hsl(31, 77%, 52%);
+    --primarycard-2: hsl(184, 100%, 22%);
+    --primarycard-3: hsl(179, 100%, 13%);
+
+    --secondory: hsl(0, 0%, 95%);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 15px;
+}
+p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 1rem;
+    line-height: 1.7;
+}
+h2{
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: var(--secondory);
+    margin-block: 2rem;
+}
+a{
+    text-decoration: none;
+    font-family: 'Lexend Deca', sans-serif;
+    display: inline-block;
+    text-align: center;
+    background-color: var(--secondory);
+    border-radius: 50px;
+    padding: 0.9rem 2rem;
+    margin-block: 2rem;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/* code */
+.card{
+    padding: 4rem;
+    height: 90vh;
+    width: 100%;
+}
+/* card1*/
+.card1{
+    background-color: var(--primarycard-1);
+}
+.card1 a{
+    color: var(--primarycard-1);
+}
+/* card2 */
+.card2{
+    background-color: var(--primarycard-2);
+}
+.card2 a{
+    color: var(--primarycard-2);
+}
+/* card3 */
+.card3{
+    background-color: var(--primarycard-3);
+}
+.card3 a{
+    color: var(--primarycard-3);
+}
+/* footer */
+.attribution a{
+    all: unset;
+    text-decoration: underline;
+    color: blue;
+    cursor: pointer;
+}
+.attribution{
+    padding-block: 10px;
+}
+
+/* desktop view */
+@media screen and  (min-width:780px)
+{
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .wrapper{
+      width: 80%;
+      margin-block: 5%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      border-radius: 0.6rem;
+      overflow: hidden;
+    }
+    .card{
+        width: 33.3%;
+        padding:  3rem;
+    }
+
+    .attribution{
+        font-size: 1rem;
+    }
+   
+}
